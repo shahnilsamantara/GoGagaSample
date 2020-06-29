@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_main"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#180101"
+        android:layout_marginTop="60dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="Looking for " />
+
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingLeft="4.0dip"
+        android:paddingTop="5.0dip"
+        android:paddingRight="4.0dip"
+        android:paddingBottom="1.0dip"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView">
+
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:id="@+id/checkbox1"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_weight="1.0"
+            android:text="@string/check_men"/>
+
+
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1.0"
+
+            android:layout_below="@+id/textView"
+            android:text="@string/check_women"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/seekimage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/beer" />
+
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/age"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/seekimage"
+        android:id="@+id/agetext"/>
+
+    <me.bendik.simplerangeview.SimpleRangeView
+        android:id="@+id/seekbar"
+        app:movable="true"
+        app:fixedLineColor="#f76e6e"
+        app:activeThumbColor="#f53d3d"
+        app:activeLineColor="#f76e6e"
+        app:showTicks="false"
+        app:showActiveTicks="false"
+        app:lineColor="#fccfcf"
+        app:count="53"
+        app:start="0"
+        app:end="24"
+        app:showLabels="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agetext"
+        android:layout_margin="30dp" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/textagepref"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:textStyle="italic"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textAlignment="center"
+        android:text="@string/agepref"
+        android:layout_below="@+id/seekbar"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GoGaga</string>
+
+    <string name="Looking_for">Looking for</string>
+    <string name="match_prefs">Match Preferences</string>
+    <string name="app_prefs">App Preferences</string>
+    <string name="title">Preferences</string>
+    <string name="check_men">Men</string>
+    <string name="check_women">Women</string>
+    <string name="age">18–24</string>
+    <string name="agepref">Age preference helps us suggest the perfect match for you.</string>
+
+</resources>
